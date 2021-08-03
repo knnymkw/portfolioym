@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="jp">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>イベント</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+  <link rel="stylesheet" type="text/css" href="css/slick.css">
+  <link rel="stylesheet" type="text/css" href="css/css.css">
+</head>
+
+<body>
+  <!-- ハンバーガー -->
+  <div class="hamburger" id="hamburger">
+    <div class="hamburger_line"></div>
+  </div>
+  <div class="hamburger_bg btn"></div>
+  <!-- //ハンバーガー -->
+  <h1><img src="images/toplogo.png" alt="pizzeria yama"></h1>
+  <ul class="header">
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="about.html">ABOUT</a></li>
+    <li><a href="index.html#menu">MENU</a></li>
+    <li><a href="order.html">予約</a></li>
+    <li><a href="event.html">EVENT</a></li>
+    <li><a href="index.html#access">ACCESS</a></li>
+
+  </ul>
+  <div class="event">
+    <h2>イベント情報</h2>
+    <div class="eventphoto">
+      <img src="images/event.jpg" alt="">
+      <img src="images/event02.jpg" alt="">
+      <img src="images/event03.jpg" alt="">
+      <img src="images/event04.jpg" alt="">
+      <img src="images/event05.jpg" alt="">
+    </div>
+    <div class="point">
+
+      <p>yamaで本格的な<br class="sp">ピッツァを作りませんか？</p>
+      <span id="point">
+
+        pizzeria yamaでは<br class="sp">「ピザを身近なものに感じてほしい！」<br>
+
+        という思いから<br class="sp">月に２回ピザ作り体験を行っております。
+        <br>
+        お子様からご年配の方まで楽しんで頂いております。
+        <br>
+        スケジュールはカレンダーを参照して下さい。
+      </span> <br><br>
+      ※小学生の方は保護者同伴でのご参加となり、<br class="sp">保護者の方にも大人料金を頂きます。
+      <br>
+      ※子供料金は中学生未満の方で<br class="sp">ピッツァサイズは少し小さい20cmとなります。
+      <br>
+
+      ※大人の方は標準サイズ（30cm）です。
+      <br><br>
+    </div>
+  </div>
+  <div class="schedule-title">
+    <h3>ピザ体験スケジュール</h3>
+  </div>
+  <div class="schedule">
+    <table>
+      <tbody>
+        <tr>
+          <th>日程</th>
+          <td>第1・3土曜日</td>
+        </tr>
+        <tr>
+          <th>時間</th>
+          <td>9：00から11：00まで</td>
+        </tr>
+      </tbody>
+    </table>
+    <table>
+      <tbody>
+        <tr>
+          <th rowspan="2">料金</th>
+          <th>子供</th>
+          <td>1500yen</td>
+        </tr>
+        <tr>
+          <th>大人</th>
+          <td>3000yen</td>
+        </tr>
+      </tbody>
+    </table>
+    <table>
+      <tbody>
+        <tr>
+          <th>ご予約方法</th>
+          <td>店頭か電話（06-0000-0000）にて承ります。</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    /* ハンバーガーメニュー */
+    function toggleNav() {
+      let body = document.body;
+      let hamburger = document.getElementById("hamburger");
+      hamburger.addEventListener("click", function () {
+        body.classList.toggle("navOpen");
+      });
+    }
+    toggleNav();
+
+    /* クラス一括削除で閉じる */
+    function btn() {
+      let body = document.body;
+      let btn = document.getElementsByClassName("btn");
+      let btns = Array.from(btn);
+      btns.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          body.classList.remove("navOpen");
+        });
+      });
+    }
+    btn();
+  </script>
+
+</body>
+
+</html>

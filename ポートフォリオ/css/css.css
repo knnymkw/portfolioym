@@ -1,0 +1,955 @@
+@charset "utf-8";
+
+body {
+  margin-bottom: 50px;
+}
+
+.youkoso {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  width: 100%;
+  padding: 15px 0;
+  top: 0;
+  background-color: #fff;
+}
+
+h1 img {
+  width: 220px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 9999;
+
+}
+
+.header {
+  width: 100%;
+  list-style: none;
+  text-align: center;
+  background-color: #a62b44;
+  padding: 4px 0;
+}
+
+.header li {
+  width: 140px;
+  text-align: center;
+  background-color: #000;
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+.header li:hover {
+
+  background-color: #b3c4ce;
+}
+
+.header li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+
+
+/*////////////////////////////
+画像スライド部分
+////////////////////////////*/
+
+.slick {
+  margin-top: 80px;
+  width: 50%;
+  max-width: 1200px;
+  margin: 50px auto;
+}
+
+.slick2 {
+  width: 70%;
+  margin: 50px auto;
+}
+
+.slick-next {
+  right: 10px;
+  z-index: 98;
+}
+
+.slick-prev {
+  left: 10px;
+  z-index: 98;
+}
+
+.slick-dots>li:only-child {
+  display: none;
+  /* スライドが１つの時はドット非表示 */
+}
+
+.slick-wide {
+  max-width: 100%;
+}
+
+/*//ここまで///////*/
+
+.main {
+  padding: 30px 80px;
+}
+
+.main h2 {
+  text-align: center;
+  line-height: 3em;
+  padding: 30px;
+}
+
+.main h3 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.main p {
+  text-align: center;
+  line-height: 4em;
+  background-image: url(../images/cook.png);
+  background-size: 400px;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.menu h2 {
+
+  text-align: center;
+  padding: 3em;
+
+}
+
+.menu {
+
+  border: 10px solid #fff;
+  padding: 10px;
+  text-align: center;
+
+}
+
+.menu p {
+  padding-top: 100px;
+  margin-top: -100px;
+  font-size: 50px;
+  font-family: 'Sacramento', cursive;
+}
+
+.menu img {
+  width: 200px;
+  display: inline-block;
+  margin: 30px;
+}
+
+.map {
+  text-align: center;
+}
+
+.map p {
+  padding-top: 100px;
+  margin-top: -100px;
+  font-size: 50px;
+  font-family: 'Sacramento', cursive;
+}
+
+.map h2 {
+  text-align: center;
+  padding: 50px 0 0 0;
+}
+
+
+
+.map table {
+  margin: 70px;
+  width: 400;
+  height: 400px;
+  text-align: center;
+}
+
+.map td {
+  padding: 30px;
+  text-align: left;
+}
+
+iframe {
+  margin: 70px;
+}
+
+.map table {
+  display: inline-block;
+
+}
+
+
+.footer {
+  width: 600px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 100px 0;
+}
+
+/*/////////////////////
+lunch.html
+dinner.html
+/////////////////////*/
+
+.lunch,
+.dinner {
+  width: 70%;
+}
+
+.lunch img,
+.dinner img {
+  display: block;
+  width: 50%;
+}
+
+/*//////////////////////////////////////////////////////////
+about.html
+///////////////////////////////////////////////////////////*/
+.history {
+  opacity: 0;
+  animation-name: history;
+  animation-duration: 5s;
+
+  animation-fill-mode: forwards;
+}
+
+@keyframes history {
+  0% {
+    opacity: 0;
+    color: #b3c4ce;
+  }
+
+  90% {
+    opacity: 1;
+    color: #000;
+  }
+
+  100% {
+    opacity: 1;
+    color: #000;
+  }
+}
+
+.history {
+  text-align: center;
+  line-height: 2em;
+  margin-top: 100px;
+}
+
+.history p {
+  line-height: 1em;
+}
+
+.history h3 {
+  margin: 50px 0;
+}
+
+/*//////////////////////////////////////////////////////////////
+event.html
+////////////////////////////////////////////////////////////////*/
+.event h2 {
+  padding: 20px;
+}
+
+.event img {
+  width: 300px;
+  display: inline;
+  text-align: center;
+  margin: 30px 0 30px 0;
+}
+
+.event {
+  background-color: #c4b72f;
+  text-align: center;
+  margin-top: 30px;
+  padding-bottom: 50px;
+}
+
+.point p {
+  margin: 30px 0;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+
+}
+
+.point #point {
+
+  padding: 2px;
+  line-height: 2.5em;
+  background-color: #fff;
+}
+
+.eventphoto {
+  text-align: center;
+  background-color: #fff;
+}
+
+.event h3 {
+  text-align: center;
+  padding: 30px;
+}
+
+.schedule-title h3 {
+  text-align: center;
+  padding: 30px;
+}
+
+.schedule table {
+  display: flex;
+  justify-content: center;
+
+}
+
+.schedule th {
+  background-color: darkgray;
+}
+
+.schedule td {
+  background-color: #fff;
+}
+
+.schedule {
+  height: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+.schedule table {
+  margin: 20px;
+  text-align: center;
+
+}
+
+.schedule td,
+th {
+  padding: 20px;
+  text-align: center;
+}
+
+.schedule td,
+th {
+  border: 1px solid #000;
+  border-collapse: collapse;
+}
+
+/*///////////////////////////////////////////////////////////////////
+order.html
+///////////////////////////////////////////////////////////////////*/
+
+.form {
+
+  display: flex;
+  padding: 0 20%;
+  justify-content: space-around;
+}
+
+.reserv,
+.reserv02 {
+
+  background: url(../images/haikei.jpg);
+  background-size: auto;
+  text-align: center;
+  width: 400px;
+  height: 150px;
+  line-height: 150px;
+  position: relative;
+  border: 2px dashed #333;
+}
+
+.reserv a,
+.reserv02 a {
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text {
+  margin-top: 50px;
+  line-height: 1.4em;
+}
+
+.form-img {
+  display: flex;
+  justify-content: center;
+}
+
+.form01,
+.form02 {
+  width: 400px;
+  display: block;
+  justify-content: center;
+  line-height: 3em;
+  margin: 30px;
+}
+
+.form01 img,
+.form02 img {
+  width: 200px;
+  text-align: center;
+
+}
+
+
+.reserv img {
+  width: 10%;
+  position: absolute;
+  right: 120px;
+  top: 70px;
+}
+
+.reserv02 img {
+  width: 10%;
+  position: absolute;
+  right: 60px;
+  top: 70px;
+}
+
+
+/*///////////
+ボタンの影
+///////////*/
+
+.reserv,
+.reserv02 {
+  background-color: rgb(190, 205, 214);
+  padding: 50px;
+}
+
+.neumorphism {
+  border-radius: 10px;
+}
+
+.reserv,
+.reserv02 {
+  background-color: rgb(190, 205, 214);
+  transition: box-shadow 0.5s;
+  box-shadow:
+    10px 10px 30px rgba(18, 47, 61, 0.5),
+    -10px -10px 30px rgba(248, 253, 255, 0.9),
+    inset 10px 10px 30px transparent,
+    inset -10px -10px 30px transparent;
+}
+
+.reserv:hover,
+.reserv02:hover {
+  box-shadow:
+    10px 10px 30px transparent,
+    -10px -10px 30px transparent,
+    inset 10px 10px 30px rgba(18, 47, 61, 0.5),
+    inset -10px -10px 30px rgba(248, 253, 255, 0.9);
+}
+
+
+
+/*order02.html*/
+
+.order02 h3 {
+  margin-top: 30px;
+  color: #fff;
+  background-color: #8c0406;
+  text-align: center;
+  padding: 30px;
+}
+
+.order02 h4 {
+  width: 200px;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: #e5e5e5;
+}
+
+.order02 {
+  text-align: center;
+}
+
+
+
+/*/
+//////////////////////////////////////////////////////
+order03.html ////////////////////////////////////*/
+
+.order03 h3 {
+  margin-top: 30px;
+  color: #fff;
+  background-color: #8c0406;
+  text-align: center;
+  padding: 30px;
+}
+
+
+
+.input p {
+  width: 200px;
+  padding: 30px;
+  text-align: center;
+  line-height: 30px;
+  background-color: #e5e5e5;
+
+}
+
+.input h5 {
+  margin: 30px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.order03 h4 {
+  margin: 20px auto;
+  width: 500px;
+  padding: 20px;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+}
+
+.input02 {
+  display: block;
+  text-align: center;
+}
+
+.input02 p {
+  width: 20%;
+  margin: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////
+ハンバーガーのデザイン
+//////////////////////////////////////////////////////////////////////////////////*/
+
+.hamburger {
+  display: none;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 9900;
+}
+
+.hamburger_line {
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background: #000;
+  position: relative;
+  top: calc(50% - 2px);
+  left: 0;
+  transition: all 0.6s;
+}
+
+.hamburger_line::before,
+.hamburger_line::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  border-radius: 2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: center;
+  transition: all 0.6s;
+
+}
+
+.hamburger_line::before {
+  transform: translate(0, -16px);
+}
+
+.hamburger_line::after {
+  transform: translate(0, 16px);
+}
+
+.hamburger_bg {
+  opacity: 0;
+  width: 100vw;
+  height: 100vh;
+  visibility: hidden;
+  background: #000;
+  cursor: pointer;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 900;
+  transition: all 0.6s;
+
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////
+  以下スマホ
+  //////////////////////////////////////////////////////////////////////////////////*/
+@media screen and (max-width: 670px) {
+
+  .hamburger {
+    display: block;
+  }
+
+  /*//////////////////////////////////////////////////////////////////////////////////
+  ナビゲーションの変形
+  //////////////////////////////////////////////////////////////////////////////////*/
+
+  .header {
+    background: #8c0406;
+    overflow-y: auto;
+    padding-top: 59px;
+    width: 40%;
+    height: 800vh;
+    position: fixed;
+    top: 0;
+    right: -60%;
+    transition: all 0.6s;
+    z-index: 950;
+  }
+
+  .header li {
+    display: block;
+  }
+
+  .header:last-child {
+    border-bottom: 2px solid #fff;
+    text-align: center;
+  }
+
+  .header li a {
+    margin: 0;
+    border-top: 1px solid #fff;
+    text-align: center;
+  }
+
+  .header li {
+    width: 100%;
+    background-color: #8c0406;
+  }
+
+  .header li:hover {
+
+    background-color: #b3c4ce;
+  }
+
+  .slick {
+    width: 80%;
+  }
+
+  /*//////////////////////////////////////////////////////////////////////////////////
+  開いた時のメニューの調整
+  //////////////////////////////////////////////////////////////////////////////////*/
+
+  .navOpen .header {
+    right: 0%;
+  }
+
+  /*//////////////////////////////////////////////////////////////////////////////////
+  開いた時のハンバーガーのデザイン
+  //////////////////////////////////////////////////////////////////////////////////*/
+
+  .navOpen .hamburger_line {
+    background: transparent;
+  }
+
+  .navOpen .hamburger_line::before,
+  .navOpen .hamburger_line::after {
+    background: #fff;
+  }
+
+  .navOpen .hamburger_line::before {
+    transform: rotate(135deg);
+  }
+
+  .navOpen .hamburger_line::after {
+    transform: rotate(-135deg);
+  }
+
+  .navOpen .hamburger_bg {
+    opacity: 0.2;
+    visibility: visible;
+  }
+
+
+}
+
+/*/////////////////////////
+event.html
+/////////////////////////*/
+@media screen and (max-width: 670px) {
+  .point {
+    font-size: 13px;
+    text-align: left;
+    padding: 0 20px;
+
+  }
+
+  .point p {
+    padding: 2px;
+  }
+
+  .schedule-title h3 {
+    text-align: center;
+    padding: 30px;
+  }
+
+
+
+  .schedule {
+    display: block;
+    justify-content: flex-start;
+  }
+
+  .event p {
+    font-size: 25px;
+
+  }
+
+  /*//////////////////////////
+index.html
+//////////////////////////*/
+
+  .youkoso {
+    margin-top: 20px;
+    color: #18afaa;
+    padding: 0px;
+  }
+
+  h1 img {
+    width: 50%;
+  }
+
+  .menu p {
+    padding-top: 60px;
+    margin-top: -60px;
+    font-size: 30px;
+  }
+
+  .main p {
+    line-height: 2.2em;
+    text-align: left;
+    font-size: 12px;
+    height: auto;
+    background-image: url(../images/cook.png);
+    background-size: 300px;
+    background-position: bottom;
+    padding-bottom: 320px;
+  }
+
+
+
+  .main {
+    padding: 0 50px;
+    display: inline-block;
+    text-align: left;
+  }
+
+  .main h3 {
+    font-size: 13px;
+    line-height: 1.2em;
+  }
+
+  .menu h2,
+  .map h2 {
+    padding: 40px 0;
+  }
+
+  .menu img {
+    width: 30%;
+    margin: 10px;
+  }
+
+  .map table {
+    margin: 40px;
+    width: 300;
+    height: 200px;
+    text-align: center;
+  }
+
+  .map td {
+    font-size: 12px;
+    padding: 12px;
+    text-align: left;
+  }
+
+  .map p {
+    font-size: 30px;
+
+  }
+
+  iframe {
+    margin: 40px;
+    width: 300px;
+    height: 300px;
+
+  }
+
+  .lunch,
+  .dinner {
+    width: 100%;
+  }
+
+  .lunch img,
+  .dinner img {
+    width: 30%;
+  }
+
+  /*/////////////////////////
+order.html
+/////////////////////////*/
+  .click02 {
+    width: 200px;
+    font-size: 10px;
+  }
+
+  .form {
+    margin-top: 50px;
+    display: block;
+    padding: 0 5%;
+
+  }
+
+  .reserv,
+  .reserv02 {
+    height: 70px;
+
+  }
+
+  .reserv,
+  .reserv02,
+  .form01,
+  .form02 {
+    width: 200px;
+  }
+
+  .form01,
+  .form02 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5em;
+
+  }
+
+  .form01 img,
+  .form02 img {
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+  .text,
+  .text02 {
+    font-size: 12px;
+    margin-top: 30px;
+  }
+
+  .reserv img,
+  .reserv02 img {
+    width: 10%;
+  }
+
+  .reserv img {
+    right: 50px;
+    top: 80px;
+  }
+
+  .reserv02 img {
+    right: 10px;
+    top: 80px;
+  }
+
+  /*//////////////////////
+order03.html 
+//////////////////////*/
+  .order03 h4 {
+    width: 300px;
+  }
+
+  .input02 p {
+    width: 30%;
+    padding: 10px;
+
+  }
+
+  /*//////////////////////
+order02.html
+//////////////////////*/
+
+  .order02 h3 {
+    background-color: #8c0406;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .order02 h4 {
+    font-size: 13px;
+    width: 150px;
+    margin: 20px auto;
+    padding: 15px;
+  }
+
+  .order02 p {
+    font-size: 10px;
+  }
+
+  .order02 select {
+    padding: 5px;
+    margin: 10px;
+  }
+
+  /*////////////////////////
+about.html
+////////////////////////*/
+  .history {
+    font-size: 13px;
+  }
+
+  .footer {
+    width: 300px;
+    padding: 50px 0;
+  }
+
+  /*////////////////////////
+event.html
+////////////////////////*/
+
+}
+
+@media screen and (min-width: 680px) {
+  .pc {
+    display: inline;
+  }
+
+  .sp {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .pc {
+    display: none;
+  }
+
+  .sp {
+    display: inline;
+  }
+}
